@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Base</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+</head>
+
+<body>
+
+
+
+    <script>
+        // DOM
+        const h1DOM = document.createElement("h1");
+
+        h1DOM.title = "Hello DOM";
+        h1DOM.className = "heading";
+
+        h1DOM.innerText = "Hello JS DOM";
+
+        document.body.appendChild(h1DOM);
+        // React -> React DOM
+        // React.createElement(type, props, children, n);
+        const h1React = React.createElement("h1", {
+            title: "Hello React",
+            className: "heading"
+        }, "Hello React JS");
+    </script>
+</body>
+
+</html>
